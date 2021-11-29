@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/snsr-back-app/snsr-back-app.iml" filepath="$PROJECT_DIR$/snsr-back-app/snsr-back-app.iml" />
+      <module fileurl="file://$USER_HOME$/OneDrive/Desktop/sensorica-collector-edb25e13e6bca76f83e7b90cace6b52308eb9192/snsr-core-app/snsr-core-app.iml" filepath="$USER_HOME$/OneDrive/Desktop/sensorica-collector-edb25e13e6bca76f83e7b90cace6b52308eb9192/snsr-core-app/snsr-core-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/snsr-front-app/snsr-front-app.iml" filepath="$PROJECT_DIR$/snsr-front-app/snsr-front-app.iml" />
+    </modules>
+  </component>
+</project>
