@@ -41,6 +41,8 @@ public class AppInit implements ApplicationRunner {
         List<Sensor> sensors = new ArrayList<>();
 
         addValueType(types, "Температура (C)", "T");
+        addValueType(types, "Давление", "P");
+        addValueType(types, "Напряжение на АКБ", "BS");
         addValueType(types, "Влажность", "H");
         addValueType(types, "Датчик дождя", "RD");
         addValueType(types, "Скорость ветра", "WS");

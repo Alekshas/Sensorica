@@ -37,7 +37,8 @@ public class PackageProvider {
     public SensoricPackage parseSensoricPackageFromByteArray(byte[] buffer) {
         List<String> typeCodes = sensorValueTypeRepository.findAll().stream()
                 .map((SensorValueType::getCode))
-                .collect(Collectors.toList());
+                .collect(Collectors.toList());//Список тпов значений датчика(влажность,давление и тд)
+
 
         String str = new String(Arrays.copyOfRange(buffer, 0, buffer.length), StandardCharsets.UTF_8);
         String baseStationId = str.substring(0, stationIdLength);
@@ -51,7 +52,8 @@ public class PackageProvider {
         List<SensorValue> idValuePairs = IntStream.range(0, splitedValues.size())
                 .filter(n -> n % 2 == 0)
                 .boxed()
-                .map((n) -> new SensorValue(Double.parseDouble(splitedValues.get(n + 1).replace(",", ".")), splitedValues.get(n)))
+                .map((n) -> new SensorValue(Double.parseDouble(splitedValues.get(n + 1).replace(",", "."))
+                        , splitedValues.get(n)))
                 .collect(Collectors.toList());
 
         return new SensoricPackage(baseStationId, sensorId, idValuePairs);
