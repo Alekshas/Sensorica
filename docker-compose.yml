@@ -37,7 +37,11 @@ services:
         image: mxmtrms/snsr-core-app
         networks:
             - back-net
-
+        environment:
+            DB_URL: database
+            DB_PORT: 5432
+            SERVER_ADDRESS: 0.0.0.0
+            SERVER_PORT: 8443
 
     database:
         container_name: postgres_container

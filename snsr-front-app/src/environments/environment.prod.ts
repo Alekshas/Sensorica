@@ -1,4 +1,4 @@
 export const environment = {
-  apiUrl: 'https://nti-sensorica.ru/api',
+  apiUrl: 'https://172.17.9.16/api',
   production: true
 };
